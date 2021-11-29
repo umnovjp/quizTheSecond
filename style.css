@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   /*  justify-content: flex-start;
+    background: linear-gradient(0deg, rgba(19,41,61,1) 0%, rgba(237,245,249,1) 63%);
+     cursor: pointer;  */
+  }
+  .half{float:right;
+    font-size:22px}
+
+    .leftSpan{float:left;
+      font-size:22px}  
+  
+  .headline {
+    font-size: 30px;
+    height: 60px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-left: 10%
+  } /* I use */
+
+  .list1 {
+    font-size: 24px;
+    position: relative; 
+   /* margin-left: 25%; */
+    left: 9%;
+    /*    line-height: 35px; */
+    margin: 10px;
+    font-weight: bold;
+    /* margin-top: 20px; 
+    color: blue; */
+  } /* I use */
+  
+  .button-style {
+    font-size: 18px;
+    /* I know changing cursor is not required I just tried */ 
+    cursor: pointer;
+    background-color: purple;
+    color: white;
+    position: relative; 
+    left: 10%;
+    flex-wrap: wrap-reverse;
+    margin: 0.2%;
+    border-radius: 5px;
+  } /* I use*/
+
+  .button-style:hover {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: lightblue;
+    color: white;
+    left: 10%;
+    margin: 0.2%;
+    border-radius: 5px;
+  } /* I use*/
+  
+  .answer {
+    line-height: normal;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    font-style: italic;
+    margin-left: 10%;
+    font-size: 18px;
+    color: grey;
+  }
+  .list2 {
+    font-size: 18px;
+    width: 80%;
+    background-color: pink;
+    color:green;
+    position: relative; 
+    left: 10%;
+    flex-wrap: wrap-reverse;
+    margin: 0.2%;
+    border-radius: 5px;
+  } /* I use*/
+ 
+  
