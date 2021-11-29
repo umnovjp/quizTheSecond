@@ -1,6 +1,5 @@
 var timeEl = document.querySelector(".half");
 
-
 var secondsLeft = 60;
 
 function setTime() {
@@ -18,8 +17,6 @@ function setTime() {
 
   }, 1000);
 }
-
-setTime();
 
 // I tried really hard to create an array of objects but something did not work. 
 // array.umshift and array.push and array.splice will add object to this array. 
@@ -54,8 +51,9 @@ var initials;
 listItems = ["Your final score is", "Enter Initials: "];
 
 var currentQuestion = -1;
-// function callQuestion displays 8 consecutive views
+// function callQuestion displays 8 consecutive views. First it asks all questions, checks if answer is correct
 function callQuestion() {
+
   currentQuestion++;
   document.getElementById('question').innerHTML = "";
   var hTag = document.createElement("h1");
@@ -83,7 +81,7 @@ function callQuestion() {
     startButton.addEventListener("click", startQuiz);
 
     function startQuiz(event) {
-
+      setTime(); // this one allows timer to start when I click the question
       callQuestion();
     };
   }; // end if
@@ -105,6 +103,8 @@ function callQuestion() {
       document.getElementById('question').appendChild(divTag);
       divTag.appendChild(buttonTag);
     }; // end for loop
+
+    //in the next few lines, I add event listeners to determine which of four buttons was clicked
 
     var firstButton = document.querySelector("#button0");
     var secondButton = document.querySelector("#button1");
